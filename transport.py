@@ -48,3 +48,22 @@ ax.axis('off')
 us_land_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='gray',antialiased=False)
 plt.show()
 
+#RAIL
+
+
+#ROAD
+road_path = os.path.join(cd,r'tl_2016_us_primaryroads',r'tl_2016_us_primaryroads.shp')
+road_map = gpd.read_file(road_path,mask=us_land_map)
+road_map = road_map.to_crs("EPSG:4326")
+fig, ax = plt.subplots(1, figsize=(8,6))
+ax.axis('off')
+road_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='black',antialiased=False)
+us_land_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='gray',antialiased=False)
+plt.show()
+
+
+#WATER
+
+
+
+
