@@ -1,0 +1,1027 @@
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: Vanderbilt Engineering Center for Transportation Operations and Research Vanderbilt University
+      Originator: Research and Innovative Technology Administration's Bureau of Transportation Statistics (RITA/BTS)
+      Publication_Date: 2011
+      Title: Commercially Navigable Waterways
+      Geospatial_Data_Presentation_Form: vector digital data
+      Publication_Information:
+        Publication_Place: Washington DC
+        Publisher: U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration
+      Online_Linkage: http://www.bts.gov/programs/geographic_information_services/
+      Larger_Work_Citation:
+        Citation_Information:
+          Originator: Research and Innovative Technology Administration's Bureau of Transportation Statistics (RITA/BTS)
+          Publication_Date: 2011
+          Title: National Transportation Atlas Databases (NTAD) 2011
+          Geospatial_Data_Presentation_Form: vector digital data
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: Research and Innovative Technology Administration's Bureau of Transportation Statistics (RITA/BTS)
+          Online_Linkage: http://www.bts.gov/programs/geographic_information_services/
+  Description:
+    Abstract:
+      The Commercially Navigable Waterways database is a subset 
+      of the National Waterway Network (as produced by the Bureau of 
+      Transportation Statistics and available at www.bts.gov/gis). 
+      Lines with FUNC_CLASS equal to "S", "B", or "D" were extracted from 
+      the BTS National Waterways Network and are considered "commercially 
+      navigable". The Commercially Navigable Waterways is a comprehensive network database of the nation's navigable waterways. The data set covers the 48 contiguous states plus the District of Columbia, Hawaii, Alaska, Puerto Rico and water links between.  The nominal scale of the dataset varies with the source material.  The majority of
+      the information is at 1:100,000 with larger scales used in harbor/bay/port areas and smaller scales used in open waters.
+    Purpose:
+      The Commercially Navigable Waterways data set is a 
+      geographic database of commercially navigable waterways in and 
+      around the United States as defined in the Office of Pipeline 
+      Safety "Pipeline Integrity Management in High Consequence Areas" 
+      rulemaking for hazardous liquid operators with 500 or more miles 
+      of pipeline.
+    Supplemental_Information: Links in the waterway network represent actual shipping lanes or serve as representative paths in open water where no defined shipping lanes exist.
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 2011
+        Time_of_Day: unknown
+    Currentness_Reference: publication date
+  Status:
+    Progress: In work
+    Maintenance_and_Update_Frequency: Unknown
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: -179.803407
+      East_Bounding_Coordinate: 175.775200
+      North_Bounding_Coordinate: 72.199720
+      South_Bounding_Coordinate: -55.905212
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: waterway network
+      Theme_Keyword: network
+      Theme_Keyword: transportation
+      Theme_Keyword: waterway
+    Place:
+      Place_Keyword_Thesaurus: USA
+      Place_Keyword: United States
+      Place_Keyword: Puerto Rico
+      Place_Keyword: Gulf of Mexico
+      Place_Keyword: Great Lakes
+      Place_Keyword: Intracoastal waterway
+    Temporal:
+      Temporal_Keyword: 2006
+      Temporal_Keyword: 2007
+      Temporal_Keyword: 2008
+      Temporal_Keyword: 2009
+      Temporal_Keyword: 2010
+      Temporal_Keyword: 2011
+  Access_Constraints: None
+  Use_Constraints: None
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Amy Nelson
+        Contact_Organization: U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration, East Building, 2nd Floor, 1200 New Jersey Ave., SE
+        City: Washington
+        State_or_Province: DC
+        Postal_Code: 20590
+        Country: USA
+      Contact_Voice_Telephone: 202.493.0591
+      Contact_Facsimile_Telephone: 202.366.4566
+      Contact_Electronic_Mail_Address: amy.nelson@dot.gov
+  Data_Set_Credit: The Commercially Navigable Waterways dataset was derived from the National Waterway Network.  The National Waterway Network was created on behalf of the Bureau of Transportation Statistics, the U.S. Army Corps of Engineers, the U.S. Bureau of Census, and the U.S. Coast Guard by Vanderbilt University and Oak Ridge National Laboratory.  Additional agencies with input into network development include Volpe National Transportation Systems Center, Maritime Administration, Military Traffic Management Command, Tennessee Valley Authority, U.S.Environmental Protection Agency, and the Federal Railroad Administration.
+  Security_Information:
+    Security_Classification: Unclassified
+  Native_Data_Set_Environment: Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.1850
+  Cross_Reference:
+    Citation_Information:
+      Originator: Research and Innovative Technology Administration's Bureau of Transportation Statistics (RITA/BTS)
+      Publication_Date: 2011
+      Title: Commercially Navigable Waterways (line)
+      Geospatial_Data_Presentation_Form: vector digital data
+      Publication_Information:
+        Publication_Place: Washington, DC
+        Publisher: Research and Innovative Technology Administration's Bureau of Transportation Statistics (RITA/BTS)
+      Online_Linkage: http://www.bts.gov/programs/geographic_information_services/
+      Larger_Work_Citation:
+        Citation_Information:
+          Online_Linkage: http://www.bts.gov/programs/geographic_information_services/
+Data_Quality_Information:
+  Attribute_Accuracy:
+    Attribute_Accuracy_Report: Attribute accuracy is tested by manual comparison of the source with hard copy printouts and/or symbolized display of digital line graphs on an interactive computer graphic system; selected attributes that cannot be visually verified on plots or on screen, are interactively queried and verified on screen.
+  Logical_Consistency_Report: RITA/BTS quality checks were completed to cross reference the dataset with the state dataset to determine if the spatial data and attribute data were accurate within each state
+  Positional_Accuracy:
+    Horizontal_Positional_Accuracy:
+      Horizontal_Positional_Accuracy_Report:
+        The "shape source" field in the link database indicate the data sources used to derive link and node placements.  The accuracy of each network element is correlated to the data source used to derive that element.  For example, links derived from 1:100,000 scale DLGs are more accurate than links derived from 1:500,000 scale NOAA Navigational Charts. Links with unknown/missing sources are usually schematic representations of USACE links.
+        Off-Shore:  NOAA Charts vary in scale.  Larger scale charts were used in harbor/port areas, while smaller scale charts were used in open water. For channels, sea lanes, and Intracoastal Waterways, shape points were placed as needed to ensure that link segments fall within waterway boundaries.
+        Inland:  Links digitized from 1:100,000 DLG files, or large scale NOAA charts are the most accurate representations.  Shape points were placed as needed to ensure that link segments fall between waterway shorelines.  Links derived from Corps milepoints have shape points approximately one mile apart.  The Corps milepoints were mainly derived from 1:24,000 and 1:100,000 scale maps. Therefore, the shape points derived from Corps milepoints are often as        accurate as shape points derived from 1:100,000 DLG files.  However, line segments connecting the shape points may not accurately represent the curvature of the waterway.
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Geological Survey
+          Publication_Date: varies
+          Title: USGS Digital Line Graph (DLG-3) Series
+          Geospatial_Data_Presentation_Form: map
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: U.S. Geological Survey
+      Source_Scale_Denominator: 24000
+      Type_of_Source_Media: stable-base material
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Range_of_Dates/Times:
+            Beginning_Date: 1978
+            Ending_Date: 2009
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: DLG
+      Source_Contribution: Inland navigable waterways spatial and type attributes
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Geological Survey
+          Publication_Date: Unknown
+          Title: National Atlas
+          Geospatial_Data_Presentation_Form: map
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: U.S. Geological Survey
+      Source_Scale_Denominator: 1.2M
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1980
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: NA
+      Source_Contribution: Inland navigable waterways spatial and type attributes
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Bureau of Census
+          Publication_Date: 1990
+          Title: TIGER/Line files
+          Geospatial_Data_Presentation_Form: map
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Bureau of Census
+      Source_Scale_Denominator: 100,000
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1990
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: TIGER
+      Source_Contribution: Inland navigable waterways spatial and type attributes
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: National Oceanographic and Atmospheric Administration
+          Publication_Date: varies
+          Title: NOAA Navigation Charts
+          Geospatial_Data_Presentation_Form: paper map
+          Publication_Information:
+            Publication_Place: Washington D.C.
+            Publisher: National Oceanographic and Atmospheric Administration
+      Source_Scale_Denominator: varies
+      Type_of_Source_Media: stable-base material
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Range_of_Dates/Times:
+            Beginning_Date: unknown
+            Ending_Date: 1994
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: NOAA
+      Source_Contribution: Inland and offshore navigable waterways spatial and type attributes
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Geological Survey
+          Publication_Date: varies
+          Title: 1:100,000 Quad maps
+          Geospatial_Data_Presentation_Form: paper map
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: U.S. Geological Survey
+      Source_Scale_Denominator: 24000
+      Type_of_Source_Media: stable-base material
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: varies
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: QUADS
+      Source_Contribution: Inland navigable waterways spatial and type attributes
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Army Corps of Engineers
+          Publication_Date: Unknown
+          Title: Waterway Link Network
+          Geospatial_Data_Presentation_Form: map
+          Publication_Information:
+            Publication_Place: New Orleans, LA
+            Publisher: U.S. Army Corps of Engineers
+      Source_Scale_Denominator: no scale
+      Type_of_Source_Media: stable-base material
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: unknown
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: USACE WLN
+      Source_Contribution: Corps of Engineers links and nodes on inland and offshore navigable waterways.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Army Corps of Engineers
+          Publication_Date: Unknown
+          Title: USACE Mile Markers
+          Geospatial_Data_Presentation_Form: table
+          Publication_Information:
+            Publication_Place: New Orleans, LA
+            Publisher: U.S. Army Corps of Engineers
+      Source_Scale_Denominator: none
+      Type_of_Source_Media: stable-base material
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: unknown
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: USACE MM
+      Source_Contribution: Inland navigable waterways locational mile markers.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Oak Ridge National Laboratories
+          Publication_Date: 1993
+          Title: Inland Waterways
+          Geospatial_Data_Presentation_Form: map
+          Publication_Information:
+            Publication_Place: none
+            Publisher: none
+      Source_Scale_Denominator: none
+      Type_of_Source_Media: unknown
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Range_of_Dates/Times:
+            Beginning_Date: unknown
+            Ending_Date: 1994
+        Source_Currentness_Reference: ending date
+      Source_Citation_Abbreviation: ORWW
+      Source_Contribution: Addition and correction of Inland navigable waterways attributes. Conflation of inland and offshore waterways.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Vanderbilt Engineering Center for Transportation Operations and Research
+          Publication_Date: 1994
+          Title: Vanderbilt Waterway Network
+          Geospatial_Data_Presentation_Form: map
+          Publication_Information:
+            Publication_Place: none
+            Publisher: none
+      Source_Scale_Denominator: varies
+      Type_of_Source_Media: stable-base material
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1994
+      Source_Citation_Abbreviation: VUWW
+      Source_Contribution: Offshore and coastal waterways spatial and operational attributes
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Vanderbilt Engineering Center for Transportation Operations and Research
+          Publication_Date: 1994
+          Title: National Waterway Network ver 1.0
+          Geospatial_Data_Presentation_Form: map
+          Publication_Information:
+            Publication_Place: none
+            Publisher: none
+      Source_Scale_Denominator: varies
+      Type_of_Source_Media: stable-base material
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 199410
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: WWAY10
+      Source_Contribution: Offshore, inland, and coastal waterways spatial and operational attributes
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Vanderbilt Engineering Center for Transportation Operations and Research
+          Publication_Date: 1997
+          Title: National Waterway Network ver 2.0
+          Geospatial_Data_Presentation_Form: digital map
+          Publication_Information:
+            Publication_Place: Washington, D.C.
+            Publisher: Bureau of Transportation Statistics
+          Online_Linkage: none
+          Larger_Work_Citation:
+            Citation_Information:
+              Publication_Information:
+      Source_Scale_Denominator: varies
+      Type_of_Source_Media: stable-base material
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1997
+            Time_of_Day: unknown
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: WWAY20
+      Source_Contribution: Offshore, inland, and coastal waterways spatial and operational attributes
+    Process_Step:
+      Process_Description: Extraction of spatial and type attributes for waterway features from NA, DLG and TIGER
+      Source_Used_Citation_Abbreviation: DLG
+      Source_Used_Citation_Abbreviation: NA
+      Source_Used_Citation_Abbreviation: TIGER
+      Source_Used_Citation_Abbreviation: USACE
+      Source_Used_Citation_Abbreviation: WLN
+      Process_Date: 1994
+      Source_Produced_Citation_Abbreviation: ORWW
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Person: Bruce Peterson
+            Contact_Organization: Oak Ridge National Laboratory
+          Contact_Address:
+            Address_Type: mailing and physical address
+            Address: Oak Ridge National Laboratory
+            City: Oak Ridge
+            State_or_Province: TN
+            Country: United States of America
+          Contact_Voice_Telephone: 6155744419
+          Contact_Facsimile_Telephone: 6155743895
+          Contact_Electronic_Mail_Address: gto@stc10.ctd.ornl.gov
+    Process_Step:
+      Process_Description: Specification of offshore, coastal and Great Lake network nodes and links on NOAA, followed by direct digitization of specified nodes and links.
+      Source_Used_Citation_Abbreviation: NOAA
+      Process_Date: 1995
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Person: Mike Dimaiuta
+            Contact_Organization: Vanderbilt Engineering Center for Transportation Operations and Research
+          Contact_Address:
+            Address_Type: mailing and physical address
+            Address: Box , Station B
+            City: Nashville
+            State_or_Province: TN
+            Postal_Code: 37235
+            Country: United States of America
+          Contact_Voice_Telephone: 6153223683
+          Contact_Facsimile_Telephone: 6153223365
+          Contact_Electronic_Mail_Address: dimaiuma@vuse.vanderbilt.edu
+    Process_Step:
+      Process_Description: Merging of inland and offshore waterway networks.  A specialized program was written to merge the two networks.  In general, Vanderbilt node locations were accepted as authoritative when both data  sets had the same elements.  This meant moving an Oak Ridge link incident to that node.  If the link was classified geographically ocean or Great Lakes, and a Vanderbilt link or chain existed with the same ID and endpoints, the Oak Ridge link was discarded, after transfer of Oak Ridge attributes.  If the Oak Ridge link was within 2 km of the new end nodes' location: and 1) if a duplicate Vanderbilt link existed with a higher source code, it replaced the Oak Ridge link, or 2) the Oak Ridge link was moved by a logistic adjustment to the new location.  (This causes modest disruption to the preponderance of the shape, yet assured that the angle of approach to the displaced end node location was preserved.)  If the link was functionally classed "deep draft" and a duplicate Vanderbilt link had an authoritative source code, the Oak Ridge link was replaced.  Otherwise an additional shape point was added at the end to snap to the new node location without disrupting the original link shape.  If the link had a Vanderbilt duplicate with the same ID, the Oak Ridge link was so flagged to be manually resolved.  The composite network was then cleaned manually, resolving all cases of still remaining duplicate links and deciding case-by-case how to smooth or otherwise accommodate a highly displaced Oak Ridge shape into the Vanderbilt digitized node location, using TIGER shorelines as a background.
+      Source_Used_Citation_Abbreviation: TIGER
+      Source_Used_Citation_Abbreviation: ORWW
+      Source_Used_Citation_Abbreviation: VUWW
+      Process_Date: 1994
+      Source_Produced_Citation_Abbreviation: WWAY10
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Person: Bruce Peterson
+            Contact_Organization: Oak Ridge National Laboratory
+          Contact_Address:
+            Address_Type: mailing and physical address
+            Address: Oak Ridge National Laboratory
+            City: Oak Ridge
+            State_or_Province: TN
+            Country: United States of America
+          Contact_Voice_Telephone: 6155744419
+          Contact_Facsimile_Telephone: 6155743895
+          Contact_Electronic_Mail_Address: gto@stc10.ctd.ornl.gov
+    Process_Step:
+      Process_Description: Heads-up digitizing of WWAY10 to add shape points to inland waterways where straight links still existed.  Incorporation of comments from users (Vanderbilt, ORNL, and USACE Waterborne Commerce Statistics Center) of WWAY10 and error correction.
+      Source_Used_Citation_Abbreviation: WWAY10
+      Source_Used_Citation_Abbreviation: DLG
+      Process_Date: 1995
+      Source_Produced_Citation_Abbreviation: WWAY11
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Person: Mike Dimaiuta
+            Contact_Organization: Vanderbilt Engineering Center for Transportation Operations and Research
+          Contact_Address:
+            Address_Type: mailing and physical address
+            Address: Box , Station B
+            City: Nashville
+            State_or_Province: TN
+            Postal_Code: 37235
+            Country: United States of America
+          Contact_Voice_Telephone: 6153223683
+          Contact_Facsimile_Telephone: 6153223365
+          Contact_Electronic_Mail_Address: dimaiuma@vuse.vanderbilt.edu
+    Process_Step:
+      Process_Description: Upgrades to link shape and attribute data based on information from US Army Corps of Engineers CWIS projects as published in their digital projects notebook.  Includes the addition of new links, removal of unnecessary links/nodes, and splitting of links to more effectively relate the digital waterway network to the physical network as maintained by the Corps of Engineers.
+      Source_Used_Citation_Abbreviation: DPN
+      Source_Used_Citation_Abbreviation: WTWY20
+      Process_Date: 1999
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Person: Kevin Little
+            Contact_Organization: Vanderbilt Engineering Center for Transportation Operations and Research
+          Contact_Address:
+            Address_Type: mailing and physical address
+            Address: Vanderbilt University, Box 1625, Station B
+            City: Nashville
+            State_or_Province: TN
+            Country: United States of America
+          Contact_Voice_Telephone: 615.322.3696
+          Contact_Facsimile_Telephone: 615.322.3365
+          Contact_Electronic_Mail_Address: krl@vuse.vanderbilt.edu
+    Process_Step:
+      Process_Description: Dataset copied.
+      Source_Used_Citation_Abbreviation:
+      Process_Date: 20120227
+      Process_Time: 18471300
+    Process_Step:
+      Process_Description: Dataset copied.
+      Source_Used_Citation_Abbreviation:
+      Process_Date: 20120227
+      Process_Time: 19110400
+Spatial_Data_Organization_Information:
+  Direct_Spatial_Reference_Method: Vector
+  Point_and_Vector_Object_Information:
+    SDTS_Terms_Description:
+      SDTS_Point_and_Vector_Object_Type: String
+      Point_and_Vector_Object_Count: 6460
+Spatial_Reference_Information:
+  Horizontal_Coordinate_System_Definition:
+    Geographic:
+      Latitude_Resolution: 0.000000
+      Longitude_Resolution: 0.000000
+      Geographic_Coordinate_Units: Decimal degrees
+    Geodetic_Model:
+      Horizontal_Datum_Name: North American Datum of 1983
+      Ellipsoid_Name: Geodetic Reference System 80
+      Semi-major_Axis: 6378137.000000
+      Denominator_of_Flattening_Ratio: 298.257222
+Entity_and_Attribute_Information:
+  Detailed_Description:
+    Entity_Type:
+      Entity_Type_Label: CNW_v3_NAD83
+      Entity_Type_Definition: National Waterway Network (line)
+      Entity_Type_Definition_Source: RITA/BTS
+    Attribute:
+      Attribute_Label: FID
+      Attribute_Definition: Internal feature number.
+      Attribute_Definition_Source: ESRI
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Sequential unique whole numbers that are automatically generated.
+    Attribute:
+      Attribute_Label: Shape
+      Attribute_Definition: Feature geometry.
+      Attribute_Definition_Source: ESRI
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: Polyline
+          Enumerated_Domain_Value_Definition: Polylinear shapes as defined by ArcView
+          Enumerated_Domain_Value_Definition_Source: ArcView Internal Attribute
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Coordinates defining the features.
+    Attribute:
+      Attribute_Label: ID
+      Attribute_Definition: Unique Link identification number
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Sequential unique whole numbers that are automatically generated.
+    Attribute:
+      Attribute_Label: LENGTH
+      Attribute_Definition: Link length in Miles
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: real
+          Enumerated_Domain_Value_Definition: with one explicit decimal place
+          Enumerated_Domain_Value_Definition_Source: calculated
+    Attribute:
+      Attribute_Label: FEATURID
+      Attribute_Definition: Unique Identifier
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Numeric Value
+    Attribute:
+      Attribute_Label: ANODE
+      Attribute_Definition: Identifies a record (NODEID) in the node file that corresponds to the starting position of the link
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Positive integer
+    Attribute:
+      Attribute_Label: BNODE
+      Attribute_Definition: Identifies a record (NODEID) in the node file that corresponds to the ending position of the link
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Positive integer
+    Attribute:
+      Attribute_Label: LINKNAME
+      Attribute_Definition: USACE link description
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Description
+    Attribute:
+      Attribute_Label: RIVERNAME
+      Attribute_Definition: Name of the water that the object belong to.
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Description
+    Attribute:
+      Attribute_Label: AMILE
+      Attribute_Definition: Milepost at the ANODE, inland Corps links, only
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: real, with one explicit decimal place
+    Attribute:
+      Attribute_Label: BMILE
+      Attribute_Definition: Milepost at the BNODE, inland Corps links, only
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: real, with one explicit decimal place
+    Attribute:
+      Attribute_Label: LENGTH1
+      Attribute_Definition: Line length, in miles
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: real, with one explicit decimal place
+    Attribute:
+      Attribute_Label: LENGTH_SRC
+      Attribute_Definition: Indication of how the length was calculated
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: V
+          Enumerated_Domain_Value_Definition: Vanderbilt; length was calculated using GIS software
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: M
+          Enumerated_Domain_Value_Definition: Milepoints; length was calculated by subtracting 'B' milepoint from 'A' milepoint
+          Enumerated_Domain_Value_Definition_Source: USACE
+    Attribute:
+      Attribute_Label: SHAPE_SRC
+      Attribute_Definition: Indicates the data source used for each link
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: CM
+          Enumerated_Domain_Value_Definition: Corps Milepoints
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: DD
+          Enumerated_Domain_Value_Definition: Digitized from 1:100K DLGs (CD-ROM)
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: DN
+          Enumerated_Domain_Value_Definition: Digitized from NOAA Charts
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: DQ
+          Enumerated_Domain_Value_Definition: Digitized from 1:100K USGS Quads
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: J
+          Enumerated_Domain_Value_Definition: Rough shape (guessed)
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: JR
+          Enumerated_Domain_Value_Definition: Original shape modified by ORNL
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: JV
+          Enumerated_Domain_Value_Definition: Original shape modified by Vanderbilt
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: M
+          Enumerated_Domain_Value_Definition: Missing / Unknown
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: NA
+          Enumerated_Domain_Value_Definition: Digitized from 1:2M National Atlas Points
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: RR
+          Enumerated_Domain_Value_Definition: ORNL link modified by ORNL
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: RV
+          Enumerated_Domain_Value_Definition: ORNL link modified by Vanderbilt
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: VR
+          Enumerated_Domain_Value_Definition: Vanderbilt link modified by ORNL
+          Enumerated_Domain_Value_Definition_Source: USACE
+    Attribute:
+      Attribute_Label: LINKTYPE
+      Attribute_Definition: Indicates the originator of the link or the type of feature represented by the link
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: CORPS
+          Enumerated_Domain_Value_Definition: Corps of Engineers original link
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: CWIS
+          Enumerated_Domain_Value_Definition: Corps of Engineers civil works improvement addition
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: ORNL
+          Enumerated_Domain_Value_Definition: Oak Ridge National Laboratory
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: VANDERBUILT
+          Enumerated_Domain_Value_Definition: Vanderbuilt University
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: LOCK
+          Enumerated_Domain_Value_Definition: Corps of Engineers lock
+          Enumerated_Domain_Value_Definition_Source: USACE
+    Attribute:
+      Attribute_Label: CTRL_DEPTH
+      Attribute_Definition: Control depth of link, in feet,Corps links only
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Measured Value
+    Attribute:
+      Attribute_Label: WATERWAY
+      Attribute_Definition: 4-digit waterway code from Corps Master_port_waterway
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: Corps Master_port_waterway
+          Codeset_Source: USACE
+    Attribute:
+      Attribute_Label: GEO_CLASS
+      Attribute_Definition: Geographic Class
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: G
+          Enumerated_Domain_Value_Definition: Great Lakes
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: O
+          Enumerated_Domain_Value_Definition: Ocean / Offshore
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: I
+          Enumerated_Domain_Value_Definition: Inland
+          Enumerated_Domain_Value_Definition_Source: USACE
+    Attribute:
+      Attribute_Label: FUNC_CLASS
+      Attribute_Definition: Functional Class
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: N
+          Enumerated_Domain_Value_Definition: no traffic, non-navigable
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: S
+          Enumerated_Domain_Value_Definition: shallow draft (i.e., no deep draft ocean vessels)
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: D
+          Enumerated_Domain_Value_Definition: deep draft
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: B
+          Enumerated_Domain_Value_Definition: Both
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: U
+          Enumerated_Domain_Value_Definition: special vessels only (fishing, pleasure craft, etc; normally no freight traffic)
+          Enumerated_Domain_Value_Definition_Source: USACE
+    Attribute:
+      Attribute_Label: WTWY_TYPE
+      Attribute_Definition: Waterway Type
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 1
+          Enumerated_Domain_Value_Definition: Harbor (including harbor channels), Bay
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 2
+          Enumerated_Domain_Value_Definition: Intracoastal Waterway
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 3
+          Enumerated_Domain_Value_Definition: Sealane
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 4
+          Enumerated_Domain_Value_Definition: Sealane with separation zone
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 5
+          Enumerated_Domain_Value_Definition: Open water
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 6
+          Enumerated_Domain_Value_Definition: River, creek, thoroughfare, lake
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 7
+          Enumerated_Domain_Value_Definition: Estuary
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 8
+          Enumerated_Domain_Value_Definition: Channel (not including harbor channels)
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 9
+          Enumerated_Domain_Value_Definition: Canal
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 10
+          Enumerated_Domain_Value_Definition: Great Lakes direct link (major ports)
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 11
+          Enumerated_Domain_Value_Definition: Great Lakes indirect link
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 12
+          Enumerated_Domain_Value_Definition: Corps of Engineers Lock
+          Enumerated_Domain_Value_Definition_Source: USACE
+    Attribute:
+      Attribute_Label: CHART_ID
+      Attribute_Definition: 4 or 5 digit NOAA chart number or 15 character 1:100K USGS Quad Map ID
+      Attribute_Definition_Source: NOAA
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: Official NOAA Chart Index
+          Codeset_Source: NOAA
+    Attribute:
+      Attribute_Label: NUM_PAIRS
+      Attribute_Definition: Number of coordinate pairs that make up the link
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Calaulated Value
+    Attribute:
+      Attribute_Label: WHO_MOD
+      Attribute_Definition: Composite code designating what organization modified the link
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: V
+          Enumerated_Domain_Value_Definition: Vanderbilt addition
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: R
+          Enumerated_Domain_Value_Definition: Oak Ridge addition
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: J
+          Enumerated_Domain_Value_Definition: guessed
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: H
+          Enumerated_Domain_Value_Definition: screen digitization from DLGs or TIGER
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 1
+          Enumerated_Domain_Value_Definition: 94 May
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: 2
+          Enumerated_Domain_Value_Definition: 94 June
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: R
+          Enumerated_Domain_Value_Definition: attributes modified by ORNL
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: A
+          Enumerated_Domain_Value_Definition: attributes modified by Vanderbilt
+          Enumerated_Domain_Value_Definition_Source: USACE
+    Attribute:
+      Attribute_Label: DATE_MOD
+      Attribute_Definition: The MODDATE (or modification date)indicates when each record in the database was last changed. As changes are made to a record, the modification date is entered in the format 'mmddyyy'.
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Date Value
+    Attribute:
+      Attribute_Label: HEADING
+      Attribute_Definition: Compass Direction
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: N
+          Enumerated_Domain_Value_Definition: North
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: S
+          Enumerated_Domain_Value_Definition: South
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: E
+          Enumerated_Domain_Value_Definition: East
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: W
+          Enumerated_Domain_Value_Definition: West
+          Enumerated_Domain_Value_Definition_Source: USACE
+    Attribute:
+      Attribute_Label: STATE
+      Attribute_Definition: State Postal Abbreviation
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: Offical List of State Postal Abbreviation
+          Codeset_Source: USACE
+    Attribute:
+      Attribute_Label: FIPS
+      Attribute_Definition: Primary State FIPS Code
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: Federal Information Processing Standard- FIPS Pub 6-4
+          Codeset_Source: National Institute for Standards and Technology (NIST)
+    Attribute:
+      Attribute_Label: FIPS2
+      Attribute_Definition: State FIPS Code
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: Federal Information Processing Standard- FIPS Pub 6-4
+          Codeset_Source: National Institute for Standards and Technology (NIST)
+    Attribute:
+      Attribute_Label: NON_US
+      Attribute_Definition: Abbreviation for non-US areas
+      Attribute_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: AC
+          Enumerated_Domain_Value_Definition: Arctic Ocean
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: AT
+          Enumerated_Domain_Value_Definition: Atlantic Ocean
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: BS
+          Enumerated_Domain_Value_Definition: Bering Sea
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: CB
+          Enumerated_Domain_Value_Definition: Caribbean Sea
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: CD
+          Enumerated_Domain_Value_Definition: Canada
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: GM
+          Enumerated_Domain_Value_Definition: Gulf of Mexico
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: PC
+          Enumerated_Domain_Value_Definition: Pacific Ocean
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: PM
+          Enumerated_Domain_Value_Definition: Panama
+          Enumerated_Domain_Value_Definition_Source: USACE
+      Attribute_Domain_Values:
+        Enumerated_Domain:
+          Enumerated_Domain_Value: XX
+          Enumerated_Domain_Value_Definition: Unidentified Area
+          Enumerated_Domain_Value_Definition_Source: USACE
+    Attribute:
+      Attribute_Label: VERSION
+      Attribute_Definition: The VERSION is a 2-digit number that will be incremented for all records in the database whenever a new release is distributed.
+      Attribute_Definition_Source: RITA/BTS
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 00
+          Range_Domain_Maximum: 99
+Distribution_Information:
+  Distributor:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration, East Building, 2nd Floor, 1200 New Jersey Ave., SE
+        City: Washington
+        State_or_Province: District of Columbia
+        Postal_Code: 20590
+        Country: USA
+      Contact_Voice_Telephone: 202.493.0591
+      Contact_Facsimile_Telephone: 202.366.4566
+      Contact_Electronic_Mail_Address: amy.nelson@dot.gov
+  Resource_Description: National Pipeline Mapping System
+  Distribution_Liability: None
+  Standard_Order_Process:
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: ESRI Shapefile
+        Format_Version_Date: 2011
+        File_Decompression_Technique: No compression applied. However, if using digital transfer online option, note access instructions.
+        Transfer_Size: 3.750
+      Digital_Transfer_Option:
+        Online_Option:
+          Computer_Contact_Information:
+            Network_Address:
+              Network_Resource_Name: www.npms.phmsa.dot.gov
+          Access_Instructions: Anyone with access to the World Wide Web may connect to the NPMS server. To access a specific database, go to the address listed above in the Network Resource Name.The NPMS server
+        Offline_Option:
+          Offline_Media: CD-ROM
+          Recording_Capacity:
+            Recording_Density: 650
+            Recording_Density_Units: megabytes
+          Recording_Format: ISO 9660
+    Fees: None
+    Ordering_Instructions: Call 202.493.0591, fax 202.366.4566, or E-mail (amy.nelson@dot.gov) to request the Commercially Navigable Waterway data set.
+  Custom_Order_Process: None
+  Technical_Prerequisites: Software that can process GIS files.
+  Available_Time_Period:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 2011
+Metadata_Reference_Information:
+  Metadata_Date: February 2012
+  Metadata_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Amy Nelson
+        Contact_Organization: U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration, East Building, 2nd Floor, 1200 New Jersey Ave., SE
+        City: Washington
+        State_or_Province: DC
+        Postal_Code: 20590
+        Country: USA
+      Contact_Voice_Telephone: 202.493.0591
+      Contact_Facsimile_Telephone: 202.366.4566
+      Contact_Electronic_Mail_Address: amy.nelson@dot.gov
+  Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+  Metadata_Standard_Version: FGDC-STD-001-1998
+  Metadata_Time_Convention: local time
+  Metadata_Extensions:
+    Online_Linkage: http://www.esri.com/metadata/esriprof80.html
+    Profile_Name: ESRI Metadata Profile
+  Metadata_Extensions:
+    Online_Linkage: http://www.esri.com/metadata/esriprof80.html
+    Profile_Name: ESRI Metadata Profile
+  Metadata_Extensions:
+    Online_Linkage: http://www.esri.com/metadata/esriprof80.html
+    Profile_Name: ESRI Metadata Profile
+  Metadata_Extensions:
+    Online_Linkage: http://www.esri.com/metadata/esriprof80.html
+    Profile_Name: ESRI Metadata Profile
