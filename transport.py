@@ -104,6 +104,15 @@ warnings.filterwarnings("ignore")
 cz_centroids_df.geometry = cz_centroids_df.centroid
 cz_lon = cz_centroids_df.centroid.x.tolist()
 cz_lat = cz_centroids_df.centroid.y.tolist()
+
+cz_loc = pd.DataFrame(
+    {'cz_code': cz_codes,
+     'cz_lon': cz_lon,
+     'cz_lat': cz_lat
+    })
+cz_loc_out_path = os.path.join(cd,r'cz_loc.csv')
+cz_loc.to_csv(cz_loc_out_path,index=False)
+
 warnings.filterwarnings("default")
 cz_areas = list(zip(cz_lon,cz_lat))
 cz_distances = []
@@ -147,6 +156,15 @@ warnings.filterwarnings("ignore")
 cfs_centroids_df.geometry = cfs_centroids_df.centroid
 cfs_lon = cfs_centroids_df.centroid.x.tolist()
 cfs_lat = cfs_centroids_df.centroid.y.tolist()
+
+cfs_loc = pd.DataFrame(
+    {'cfs_code': cfs_codes,
+     'cfs_lon': cfs_lon,
+     'cfs_lat': cfs_lat
+    })
+cfs_loc_out_path = os.path.join(cd,r'cfs_loc.csv')
+cfs_loc.to_csv(cfs_loc_out_path,index=False)
+
 warnings.filterwarnings("default")
 cfs_areas = list(zip(cfs_lon,cfs_lat))
 cfs_distances = []
@@ -188,6 +206,15 @@ warnings.filterwarnings("ignore")
 cty_centroids_df.geometry = cty_centroids_df.centroid
 cty_lon = cty_centroids_df.centroid.x.tolist()
 cty_lat = cty_centroids_df.centroid.y.tolist()
+
+cty_loc = pd.DataFrame(
+    {'cty_code': cty_codes,
+     'cty_lon': cty_lon,
+     'cty_lat': cty_lat
+    })
+cty_loc_out_path = os.path.join(cd,r'cty_loc.csv')
+cty_loc.to_csv(cty_loc_out_path,index=False)
+
 warnings.filterwarnings("default")
 cty_areas = list(zip(cty_lon,cty_lat))
 cty_distances = []
