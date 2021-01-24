@@ -249,3 +249,4 @@ cty_centroids_df.plot(ax=ax,marker=',',color='red',markersize=1,antialiased=Fals
 bounding_box.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='white',antialiased=False)
 cty_cent_img_path = os.path.join(cd,r'cty_cent_map.png')
 plt.savefig(cty_cent_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+
