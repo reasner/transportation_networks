@@ -150,6 +150,9 @@ plt.savefig(cz_cent_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
 #Commodity Flow Survery (CFS) Areas
 cfs_map_path = os.path.join(cd_dotdot,r'cfs_cz_shapefile_and_distances',r'cfs07',r'cfs07.shp')
 cfs_map = gpd.read_file(cfs_map_path)
+cfs_map = cfs_map.sort_values(by='cfs_area')
+unique_codes_ordered = cfs_map['cfs_area']
+unique_codes_ordered.to_csv('unique_codes_ordered.csv',index=False)
 cfs_codes = cfs_map['cfs_area'].tolist()
 cfs_centroids_df = cfs_map[['geometry']].copy()
 warnings.filterwarnings("ignore")
