@@ -55,42 +55,103 @@ water_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='black',antialiase
 ax.margins(0)
 ax.tick_params(left=False, labelleft=False, bottom=False, labelbottom=False)
 water_img_path = os.path.join(cd,r'water_map.png')
+water_detailed_img_path = os.path.join(cd,r'water_detailed_map.png')
 plt.savefig(water_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+plt.savefig(water_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
 
 #ROAD
-road_path = os.path.join(cd,r'tl_2016_us_primaryroads',r'tl_2016_us_primaryroads.shp')
+road_path = os.path.join(cd,r'pa_nhs',r'PA_NHS.shp')
+#road_path = os.path.join(cd,r'tl_2016_us_primaryroads',r'tl_2016_us_primaryroads.shp')
 road_map = gpd.read_file(road_path)
+road_map = road_map[~(road_map['State_Code'] == 2) & ~(road_map['State_Code'] == 15)]
+road_map  = road_map[road_map.geometry.is_valid]
+interstate_map = road_map[(road_map['F_SYSTEM'] == 1)]
+highway_map = road_map[(road_map['F_SYSTEM'] == 2) | (road_map['F_SYSTEM'] == 3)]
+other_road_map = road_map[(road_map['F_SYSTEM'] == 4) | (road_map['F_SYSTEM'] == 5) \
+                          | (road_map['F_SYSTEM'] == 6)]
 warnings.filterwarnings("ignore")
-road_map = road_map.to_crs("EPSG:5070")
+interstate_map = interstate_map.to_crs("EPSG:5070")
+highway_map = highway_map.to_crs("EPSG:5070")
+other_road_map = other_road_map.to_crs("EPSG:5070")
 warnings.filterwarnings("default")
-road_map = gpd.clip(road_map,bounding_box)
+interstate_map = gpd.clip(interstate_map,bounding_box)
+highway_map = gpd.clip(highway_map,bounding_box)
+other_road_map = gpd.clip(other_road_map,bounding_box)
+#interstate picture
 fig = plt.figure()
 ax = fig.add_axes([0, 0, 1, 1])
 ax.axis('off')
 bounding_box.plot(ax=ax,facecolor="white",linewidth=0,edgecolor='none',antialiased=False)
-road_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='black',antialiased=False)
+interstate_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='black',antialiased=False)
 ax.margins(0)
 ax.tick_params(left=False, labelleft=False, bottom=False, labelbottom=False)
-road_img_path = os.path.join(cd,r'road_map.png')
-plt.savefig(road_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+interstate_img_path = os.path.join(cd,r'interstate_map.png')
+interstate_detailed_img_path = os.path.join(cd,r'interstate_detailed_map.png')
+plt.savefig(interstate_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+plt.savefig(interstate_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
+#highway picture
+fig = plt.figure()
+ax = fig.add_axes([0, 0, 1, 1])
+ax.axis('off')
+bounding_box.plot(ax=ax,facecolor="white",linewidth=0,edgecolor='none',antialiased=False)
+highway_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='black',antialiased=False)
+ax.margins(0)
+ax.tick_params(left=False, labelleft=False, bottom=False, labelbottom=False)
+highway_img_path = os.path.join(cd,r'highway_map.png')
+highway_detailed_img_path = os.path.join(cd,r'highway_detailed_map.png')
+plt.savefig(highway_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+plt.savefig(highway_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
+#other road picture
+fig = plt.figure()
+ax = fig.add_axes([0, 0, 1, 1])
+ax.axis('off')
+bounding_box.plot(ax=ax,facecolor="white",linewidth=0,edgecolor='none',antialiased=False)
+other_road_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='black',antialiased=False)
+ax.margins(0)
+ax.tick_params(left=False, labelleft=False, bottom=False, labelbottom=False)
+other_road_img_path = os.path.join(cd,r'other_road_map.png')
+other_road_detailed_img_path = os.path.join(cd,r'other_road_detailed_map.png')
+plt.savefig(other_road_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+plt.savefig(other_road_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
+
 
 #RAIL
-rail_path = os.path.join(cd,r'tl_2010_us_rails',r'tl_2010_us_rails.shp')
+rail_path = os.path.join(cd,r'Railroads-shp',r'Railroads.shp')
+#rail_path = os.path.join(cd,r'tl_2010_us_rails',r'tl_2010_us_rails.shp')
 rail_map = gpd.read_file(rail_path)
+rail_map = rail_map[~(rail_map['stfips'] == '02')]
+main_rail_map = rail_map[(rail_map['net'] == 'M')]
+other_rail_map = rail_map[~(rail_map['net'] == 'M')]
 warnings.filterwarnings("ignore")
-rail_map = rail_map.to_crs("EPSG:5070")
+main_rail_map = main_rail_map.to_crs("EPSG:5070")
+other_rail_map = other_rail_map.to_crs("EPSG:5070")
 warnings.filterwarnings("default")
-rail_map = gpd.clip(rail_map,bounding_box)
-rail_map = rail_map[rail_map['MTFCC'] == 'R1011']
+main_rail_map = gpd.clip(main_rail_map,bounding_box)
+other_rail_map = gpd.clip(other_rail_map,bounding_box)
+#main rail
 fig = plt.figure()
 ax = fig.add_axes([0, 0, 1, 1])
 ax.axis('off')
 bounding_box.plot(ax=ax,facecolor="white",linewidth=0,edgecolor='none',antialiased=False)
-rail_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='black',antialiased=False)
+main_rail_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='black',antialiased=False)
 ax.margins(0)
 ax.tick_params(left=False, labelleft=False, bottom=False, labelbottom=False)
-rail_img_path = os.path.join(cd,r'rail_map.png')
-plt.savefig(rail_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+main_rail_img_path = os.path.join(cd,r'main_rail_map.png')
+main_rail_detailed_img_path = os.path.join(cd,r'main_detailed_rail_map.png')
+plt.savefig(main_rail_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+plt.savefig(main_rail_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
+#other rail
+fig = plt.figure()
+ax = fig.add_axes([0, 0, 1, 1])
+ax.axis('off')
+bounding_box.plot(ax=ax,facecolor="white",linewidth=0,edgecolor='none',antialiased=False)
+other_rail_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='black',antialiased=False)
+ax.margins(0)
+ax.tick_params(left=False, labelleft=False, bottom=False, labelbottom=False)
+other_rail_img_path = os.path.join(cd,r'other_rail_map.png')
+other_rail_detailed_img_path = os.path.join(cd,r'other_detailed_rail_map.png')
+plt.savefig(other_rail_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+plt.savefig(other_rail_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
 
 #LOCATIONS
 if not os.path.exists(os.path.join(cd,r'pairs')):
