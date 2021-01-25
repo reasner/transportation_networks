@@ -58,6 +58,7 @@ water_img_path = os.path.join(cd,r'water_map.png')
 water_detailed_img_path = os.path.join(cd,r'water_detailed_map.png')
 plt.savefig(water_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
 plt.savefig(water_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
+plt.clf()
 
 #ROAD
 road_path = os.path.join(cd,r'pa_nhs',r'PA_NHS.shp')
@@ -66,9 +67,8 @@ road_map = gpd.read_file(road_path)
 road_map = road_map[~(road_map['State_Code'] == 2) & ~(road_map['State_Code'] == 15)]
 road_map  = road_map[road_map.geometry.is_valid]
 interstate_map = road_map[(road_map['F_SYSTEM'] == 1)]
-highway_map = road_map[(road_map['F_SYSTEM'] == 2) | (road_map['F_SYSTEM'] == 3)]
-other_road_map = road_map[(road_map['F_SYSTEM'] == 4) | (road_map['F_SYSTEM'] == 5) \
-                          | (road_map['F_SYSTEM'] == 6)]
+highway_map = road_map[(road_map['F_SYSTEM'] == 2)]
+other_road_map = road_map[(road_map['F_SYSTEM'] == 3)]
 warnings.filterwarnings("ignore")
 interstate_map = interstate_map.to_crs("EPSG:5070")
 highway_map = highway_map.to_crs("EPSG:5070")
@@ -89,6 +89,7 @@ interstate_img_path = os.path.join(cd,r'interstate_map.png')
 interstate_detailed_img_path = os.path.join(cd,r'interstate_detailed_map.png')
 plt.savefig(interstate_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
 plt.savefig(interstate_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
+plt.clf()
 #highway picture
 fig = plt.figure()
 ax = fig.add_axes([0, 0, 1, 1])
@@ -101,6 +102,7 @@ highway_img_path = os.path.join(cd,r'highway_map.png')
 highway_detailed_img_path = os.path.join(cd,r'highway_detailed_map.png')
 plt.savefig(highway_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
 plt.savefig(highway_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
+plt.clf()
 #other road picture
 fig = plt.figure()
 ax = fig.add_axes([0, 0, 1, 1])
@@ -113,7 +115,6 @@ other_road_img_path = os.path.join(cd,r'other_road_map.png')
 other_road_detailed_img_path = os.path.join(cd,r'other_road_detailed_map.png')
 plt.savefig(other_road_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
 plt.savefig(other_road_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
-
 
 #RAIL
 rail_path = os.path.join(cd,r'Railroads-shp',r'Railroads.shp')
@@ -152,6 +153,7 @@ other_rail_img_path = os.path.join(cd,r'other_rail_map.png')
 other_rail_detailed_img_path = os.path.join(cd,r'other_detailed_rail_map.png')
 plt.savefig(other_rail_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
 plt.savefig(other_rail_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
+plt.clf()
 
 #LOCATIONS
 if not os.path.exists(os.path.join(cd,r'pairs')):
@@ -173,7 +175,6 @@ cz_loc = pd.DataFrame(
     })
 cz_loc_out_path = os.path.join(cd,r'cz_loc.csv')
 cz_loc.to_csv(cz_loc_out_path,index=False)
-
 warnings.filterwarnings("default")
 cz_areas = list(zip(cz_lon,cz_lat))
 cz_distances = []
@@ -208,6 +209,7 @@ cz_centroids_df.plot(ax=ax,marker=',',color='red',markersize=1,antialiased=False
 bounding_box.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='white',antialiased=False)
 cz_cent_img_path = os.path.join(cd,r'cz_cent_map.png')
 plt.savefig(cz_cent_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+plt.clf()
 #Commodity Flow Survery (CFS) Areas
 cfs_map_path = os.path.join(cd_dotdot,r'cfs_cz_shapefile_and_distances',r'cfs07',r'cfs07.shp')
 cfs_map = gpd.read_file(cfs_map_path)
@@ -220,7 +222,6 @@ warnings.filterwarnings("ignore")
 cfs_centroids_df.geometry = cfs_centroids_df.centroid
 cfs_lon = cfs_centroids_df.centroid.x.tolist()
 cfs_lat = cfs_centroids_df.centroid.y.tolist()
-
 cfs_loc = pd.DataFrame(
     {'cfs_code': cfs_codes,
      'cfs_lon': cfs_lon,
@@ -263,6 +264,7 @@ cfs_centroids_df.plot(ax=ax,marker=',',color='red',markersize=1,antialiased=Fals
 bounding_box.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='white',antialiased=False)
 cfs_cent_img_path = os.path.join(cd,r'cfs_cent_map.png')
 plt.savefig(cfs_cent_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+plt.clf()
 #Counties (cty) 
 cty_codes = county_map['fips'].tolist()
 cty_centroids_df = county_map[['geometry']].copy()
@@ -278,7 +280,6 @@ cty_loc = pd.DataFrame(
     })
 cty_loc_out_path = os.path.join(cd,r'cty_loc.csv')
 cty_loc.to_csv(cty_loc_out_path,index=False)
-
 warnings.filterwarnings("default")
 cty_areas = list(zip(cty_lon,cty_lat))
 cty_distances = []
@@ -313,4 +314,34 @@ cty_centroids_df.plot(ax=ax,marker=',',color='red',markersize=1,antialiased=Fals
 bounding_box.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='white',antialiased=False)
 cty_cent_img_path = os.path.join(cd,r'cty_cent_map.png')
 plt.savefig(cty_cent_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
+plt.clf()
+
+#PRETTY NETWORK MAPS
+#road and water
+fig = plt.figure()
+ax = fig.add_axes([0, 0, 1, 1])
+ax.axis('off')
+bounding_box.plot(ax=ax,facecolor="blue",linewidth=0,edgecolor='none')
+us_land_map.plot(ax=ax,facecolor="white",linewidth=0.1,edgecolor='none')
+other_road_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='0.8')
+highway_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='0.4')
+interstate_map.plot(ax=ax,facecolor="none",linewidth=0.25,edgecolor='0')
+water_map.plot(ax=ax,facecolor="none",linewidth=0.5,edgecolor='blue')
+pretty_road_img_path = os.path.join(cd,r'road_network.png')
+plt.savefig(pretty_road_img_path,bbox_inches='tight',pad_inches=0,dpi=300)
+plt.clf()
+
+#rail and water
+fig = plt.figure()
+ax = fig.add_axes([0, 0, 1, 1])
+ax.axis('off')
+bounding_box.plot(ax=ax,facecolor="blue",linewidth=0,edgecolor='none')
+us_land_map.plot(ax=ax,facecolor="white",linewidth=0.1,edgecolor='none')
+other_rail_map.plot(ax=ax,facecolor="none",linewidth=0.15,edgecolor='0.4')
+main_rail_map.plot(ax=ax,facecolor="none",linewidth=0.25,edgecolor='0')
+water_map.plot(ax=ax,facecolor="none",linewidth=0.5,edgecolor='blue')
+pretty_rail_img_path = os.path.join(cd,r'rail_network.png')
+plt.savefig(pretty_rail_img_path,bbox_inches='tight',pad_inches=0,dpi=300)
+plt.clf()
+
 
