@@ -26,9 +26,16 @@ us_land_map = us_land_map.dissolve(by='all')
 
 ## Navigable waterway network
 
+The source of the network of commercially navigable waterways in the contiguous United States is [a shapefile](https://www.npms.phmsa.dot.gov/CNWData.aspx) compiled by the National Pipeline Mapping System (NMPS) (part of the U.S. Department of Transportation (DOT)) that takes the U.S. Army Corps of Engineers’ National Waterway Network and excludes waterways that are not suitable for commerical traffic. 
+
 ## Road network
 
+The data on the highway network for the contiguous United States is [a shapefile](https://www.fhwa.dot.gov/policyinformation/hpms/shapefiles_2017.cfm) from the Highway Performance Monitoring System of the Federal Highway Administration (FHA).
+
+
 ## Rail network
+
+The railroad network for the contiguous United States is derived from [a shapefile for all 50 states](https://hifld-geoplatform.opendata.arcgis.com/datasets/2a9677db741d4a78bd221586fe9a61f5_0) from the Homeland Infrastructure Foundation-Level Data (HIFLD) (part of the Department of Homeland Security (DHS)). 
 
 ## Locations
 
@@ -36,7 +43,11 @@ us_land_map = us_land_map.dissolve(by='all')
 
 Transportation network maps of the U.S.
 
+### Road network and navigable waterways
+
 ![road_network.png](road_network.png)
+
+### Rail network and naviagable waterways
 
 ![rail_network.png](rail_network.png)
 
