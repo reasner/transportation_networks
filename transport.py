@@ -15,6 +15,7 @@ cd_dotdot = os.path.join(os.path.expanduser("~"),r'Documents',r'projects')
 # LOAD COUNTY SHAPEFILE
 shapefile_path = os.path.join(cd_dotdot,r'cfs_cz_shapefile_and_distances',r'fips',r'fips.shp')
 county_map = gpd.read_file(shapefile_path)
+#combine counties into a single shape
 county_map['cont_us'] = 1
 cont_us_map = county_map.dissolve(by='cont_us')
 
@@ -26,7 +27,7 @@ warnings.filterwarnings("ignore")
 land_map = land_map.to_crs("EPSG:5070")
 land_map['geometry'] = land_map['geometry'].buffer(5)
 warnings.filterwarnings("default")
-#load create geodataframe from bounding box
+#create bounding box and load into a geodataframe
 bbox = cont_us_map.envelope
 bounding_box = gpd.GeoDataFrame(gpd.GeoSeries(bbox), columns=['geometry'])
 #combine
