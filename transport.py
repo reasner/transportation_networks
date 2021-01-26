@@ -40,7 +40,7 @@ bbox_bounds = bbox_bounds.T
 bbox_out_path = os.path.join(cd,r'bbox_bounds.csv')
 bbox_bounds.to_csv(bbox_out_path)
 
-#WATER
+#NAVIGABLE WATERWAYS
 water_path = os.path.join(cd,r'CNW_v3_NAD83',r'CNW_v3_NAD83.shp')
 water_map = gpd.read_file(water_path)
 warnings.filterwarnings("ignore")
@@ -61,9 +61,8 @@ plt.savefig(water_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
 plt.savefig(water_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
 plt.clf()
 
-#ROAD
+#HIGHWAYS
 road_path = os.path.join(cd,r'pa_nhs',r'PA_NHS.shp')
-#road_path = os.path.join(cd,r'tl_2016_us_primaryroads',r'tl_2016_us_primaryroads.shp')
 road_map = gpd.read_file(road_path)
 road_map = road_map[~(road_map['State_Code'] == 2) & ~(road_map['State_Code'] == 15)]
 road_map  = road_map[road_map.geometry.is_valid]
@@ -117,9 +116,8 @@ other_road_detailed_img_path = os.path.join(cd,r'other_road_detailed_map.png')
 plt.savefig(other_road_img_path,bbox_inches='tight',pad_inches=0,dpi=100)
 plt.savefig(other_road_detailed_img_path,bbox_inches='tight',pad_inches=0,dpi=125)
 
-#RAIL
+#RAILROADS
 rail_path = os.path.join(cd,r'Railroads-shp',r'Railroads.shp')
-#rail_path = os.path.join(cd,r'tl_2010_us_rails',r'tl_2010_us_rails.shp')
 rail_map = gpd.read_file(rail_path)
 rail_map = rail_map[~(rail_map['stfips'] == '02')]
 main_rail_map = rail_map[(rail_map['net'] == 'M')]
@@ -168,7 +166,6 @@ warnings.filterwarnings("ignore")
 cz_centroids_df.geometry = cz_centroids_df.centroid
 cz_lon = cz_centroids_df.centroid.x.tolist()
 cz_lat = cz_centroids_df.centroid.y.tolist()
-
 cz_loc = pd.DataFrame(
     {'cz_code': cz_codes,
      'cz_lon': cz_lon,
