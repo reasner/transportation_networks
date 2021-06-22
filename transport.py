@@ -10,8 +10,8 @@ import warnings
 from PIL import Image
 
 # SETUP
-cd = os.path.join(os.path.expanduser("~"),r'Documents',r'projects',r'transport')
-cd_dotdot = os.path.join(os.path.expanduser("~"),r'Documents',r'projects')
+cd = os.path.join(os.path.expanduser("~"),r'Dropbox',r'projects',r'transport')
+cd_dotdot = os.path.join(os.path.expanduser("~"),r'Dropbox',r'projects')
 # LOAD COUNTY SHAPEFILE
 shapefile_path = os.path.join(cd_dotdot,r'cfs_cz_shapefile_and_distances',r'fips',r'fips.shp')
 county_map = gpd.read_file(shapefile_path)
@@ -314,9 +314,11 @@ highway_map.plot(ax=ax,facecolor="none",linewidth=0.1,edgecolor='0.4')
 interstate_map.plot(ax=ax,facecolor="none",linewidth=0.25,edgecolor='0')
 water_map.plot(ax=ax,facecolor="none",linewidth=0.5,edgecolor='blue')
 pretty_road_img_path = os.path.join(cd,r'road_network.png')
+#pretty_road_img_path = os.path.join(cd,r'road_network.eps')
 ax.margins(0)
 ax.tick_params(left=False, labelleft=False, bottom=False, labelbottom=False)
 plt.savefig(pretty_road_img_path,bbox_inches='tight',pad_inches=0,dpi=200)
+#plt.savefig(pretty_road_img_path,bbox_inches='tight',format='eps',pad_inches=0,dpi=200)
 plt.clf()
 
 #rail and water
@@ -331,7 +333,9 @@ water_map.plot(ax=ax,facecolor="none",linewidth=0.5,edgecolor='blue')
 ax.margins(0)
 ax.tick_params(left=False, labelleft=False, bottom=False, labelbottom=False)
 pretty_rail_img_path = os.path.join(cd,r'rail_network.png')
+#pretty_rail_img_path = os.path.join(cd,r'rail_network.eps')
 plt.savefig(pretty_rail_img_path,bbox_inches='tight',pad_inches=0,dpi=200)
+#plt.savefig(pretty_rail_img_path,bbox_inches='tight',format='eps',pad_inches=0,dpi=200)
 plt.clf()
 
 
