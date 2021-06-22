@@ -10,7 +10,7 @@ import warnings
 from PIL import Image
 
 # SETUP
-cd = os.path.join(os.path.expanduser("~"),r'Dropbox',r'projects',r'transport')
+cd = os.path.join(os.path.expanduser("~"),r'Dropbox',r'projects',r'transportation_networks')
 cd_dotdot = os.path.join(os.path.expanduser("~"),r'Dropbox',r'projects')
 # LOAD COUNTY SHAPEFILE
 shapefile_path = os.path.join(cd_dotdot,r'cfs_cz_shapefile_and_distances',r'fips',r'fips.shp')
